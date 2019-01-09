@@ -14,13 +14,13 @@ class Activity3 : AppCompatActivity() {
 
         val actionbar = supportActionBar
 
-        actionbar!!.title = "Activity3"
+        actionbar!!.title = "Squat"
 
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         Activity3Input.setOnEditorActionListener() { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                var WorkingWeight = Activity3Input.text.toString().toInt()
+                var WorkingWeight = Activity3Input.text.toString().toFloat()
 
                 var warmup1: TextView = findViewById(R.id.WarmUp1)
                 var warmup2: TextView = findViewById(R.id.WarmUp2)

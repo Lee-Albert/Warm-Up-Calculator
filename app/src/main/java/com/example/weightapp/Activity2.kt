@@ -7,6 +7,8 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_2.*
+import WeightAppUtil.*
+import kotlin.text.trim
 
 class Activity2 : AppCompatActivity() {
 
@@ -16,13 +18,13 @@ class Activity2 : AppCompatActivity() {
 
         val actionbar = supportActionBar
 
-        actionbar!!.title = "Activity2"
+        actionbar!!.title = "Bench"
 
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         Activity2Input.setOnEditorActionListener() { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                var WorkingWeight = Activity2Input.text.toString().toInt()
+                var WorkingWeight = Activity2Input.text.toString().toFloat()
 
                 var warmup1: TextView = findViewById(R.id.WarmUp1)
                 var warmup2: TextView = findViewById(R.id.WarmUp2)
@@ -30,11 +32,11 @@ class Activity2 : AppCompatActivity() {
                 var warmup4: TextView = findViewById(R.id.WarmUp4)
                 var warmup5: TextView = findViewById(R.id.WarmUp5)
 
-                warmup1.text = WorkingWeight.toString()
-                warmup2.text = WorkingWeight.toString()
-                warmup3.text = WorkingWeight.toString()
-                warmup4.text = WorkingWeight.toString()
-                warmup5.text = WorkingWeight.toString()
+                warmup1.text = "1x10 45 (None)"
+                warmup2.text = "1x8 " + WeightRounder((WorkingWeight * 0.5).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.5).toFloat())).trim() + ")"
+                warmup3.text = "1x5 " + WeightRounder((WorkingWeight * 0.7).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.7).toFloat())).trim() + ")"
+                warmup4.text = "1x3 " + WeightRounder((WorkingWeight * 0.9).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.9).toFloat())).trim() + ")"
+                warmup5.text = "3x5 " + WeightRounder(WorkingWeight).toInt().toString() + " ("+ PlatesPerSide(WeightRounder(WorkingWeight)).trim() + ")"
 
                 true
             }
