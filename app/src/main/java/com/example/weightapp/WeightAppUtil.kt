@@ -3,7 +3,11 @@ package WeightAppUtil
 import kotlin.math.round
 
     fun WeightRounder(weight: Float):Float {
-        return ((Math.round(weight/5))*5).toFloat()
+        if (weight <= 45.0) {
+            return 45.toFloat()
+        }
+        else
+            return ((Math.round(weight/5))*5).toFloat()
     }
     fun PlatesPerSide(totalWeight: Float):String {
         var weightPerSide:Float = (totalWeight - 45)/2
@@ -55,6 +59,9 @@ import kotlin.math.round
         }
         if(platesPerSide[5] != 0) {
             totalPlates += platesPerSide[5].toInt().toString() + "x" + plateWeight[5].toString() + " "
+        }
+        if (totalPlates == "") {
+           totalPlates = "None"
         }
         return totalPlates
     }

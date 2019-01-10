@@ -9,16 +9,40 @@
             android:layout_height="70dp"
             android:text="Bench"
             android:id="@+id/Button1"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="70dp"/>
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
     <Button
             android:layout_width="123dp"
             android:layout_height="67dp"
             android:text="Squat"
             android:id="@+id/Button2"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="266dp"/>
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="148dp"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="123dp"
+            android:layout_height="67dp"
+            android:text="OHP"
+            android:id="@+id/Button3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="236dp"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="123dp"
+            android:layout_height="67dp"
+            android:text="Deadlift"
+            android:id="@+id/Button4"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="328dp"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="123dp"
+            android:layout_height="67dp"
+            android:text="Barbell Row"
+            android:id="@+id/Button5"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="416dp"
+            android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

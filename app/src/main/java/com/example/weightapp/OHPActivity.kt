@@ -9,7 +9,7 @@ import WeightAppUtil.PlatesPerSide
 import WeightAppUtil.WeightRounder
 import kotlin.text.trim
 
-class OHPClass : AppCompatActivity() {
+class OHPActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -16,9 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Activity2">
+        <activity android:name=".BenchActivity">
         </activity>
-        <activity android:name=".Activity3">
+        <activity android:name=".SquatActivity">
+        </activity>
+        <activity android:name=".OHPActivity">
+        </activity>
+        <activity android:name=".DeadliftActivity">
+        </activity>
+        <activity android:name=".BarbellRowActivity">
         </activity>
     </application>
 

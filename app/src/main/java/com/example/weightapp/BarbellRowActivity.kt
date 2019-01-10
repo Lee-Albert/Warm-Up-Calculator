@@ -9,7 +9,7 @@ import WeightAppUtil.PlatesPerSide
 import WeightAppUtil.WeightRounder
 import kotlin.text.trim
 
-class BarbellRowClass : AppCompatActivity() {
+class BarbellRowActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
