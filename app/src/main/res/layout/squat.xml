@@ -4,69 +4,64 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter your working weight and the screen will display recommended warm-up weights and how many plates to put on each side of the bar."
-            android:textSize="20dp"/>
-
     <EditText
             android:id="@+id/Activity3Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your working weight here"
             android:imeOptions="actionDone"
-            android:inputType="number" android:layout_alignParentTop="true"
-            android:layout_marginTop="68dp" android:layout_alignParentStart="true" android:layout_marginStart="0dp"/>
+            android:inputType="number"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp"/>
 
     <TextView
-            android:text="hello"
+            android:text=""
             android:id="@+id/WarmUp1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:layout_marginTop="144dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Activity3Input"/>
 
     <TextView
-            android:text="hello"
+            android:text=""
             android:id="@+id/WarmUp2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:layout_marginTop="210dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/WarmUp1"/>
 
     <TextView
-            android:text="hello"
+            android:text=""
             android:id="@+id/WarmUp3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:layout_marginTop="286dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/WarmUp2"/>
 
     <TextView
-            android:text="hello"
+            android:text=""
             android:id="@+id/WarmUp4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:layout_marginTop="362dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/WarmUp3"/>
 
     <TextView
-            android:text="hello"
+            android:text=""
             android:id="@+id/WarmUp5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:layout_marginTop="440dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/WarmUp4"/>
 
 </RelativeLayout>
