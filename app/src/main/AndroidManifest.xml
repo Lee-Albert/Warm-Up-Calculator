@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.weightapp"
+          package="com.albert.weightapp"
           android:versionCode="1"
           android:versionName="1.0">
 
@@ -11,22 +11,22 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.albert.weightapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".BenchActivity">
+        <activity android:name="com.albert.weightapp.BenchActivity">
         </activity>
-        <activity android:name=".SquatActivity">
+        <activity android:name="com.albert.weightapp.SquatActivity">
         </activity>
-        <activity android:name=".OHPActivity">
+        <activity android:name="com.albert.weightapp.OHPActivity">
         </activity>
-        <activity android:name=".DeadliftActivity">
+        <activity android:name="com.albert.weightapp.DeadliftActivity">
         </activity>
-        <activity android:name=".BarbellRowActivity">
+        <activity android:name="com.albert.weightapp.BarbellRowActivity">
         </activity>
     </application>
 
