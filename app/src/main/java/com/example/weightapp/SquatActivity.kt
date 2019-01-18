@@ -32,9 +32,9 @@ class SquatActivity : AppCompatActivity() {
                 var warmup5: TextView = findViewById(R.id.WarmUp5)
 
                 warmup1.text = "1x10 45 (None)"
-                warmup2.text = "1x8 " + WeightRounder((WorkingWeight * 0.5).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.5).toFloat())).trim() + ")"
-                warmup3.text = "1x5 " + WeightRounder((WorkingWeight * 0.7).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.7).toFloat())).trim() + ")"
-                warmup4.text = "1x3 " + WeightRounder((WorkingWeight * 0.9).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.9).toFloat())).trim() + ")"
+                warmup2.text = "1x5 " + WeightRounder((WorkingWeight * 0.5).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.5).toFloat())).trim() + ")"
+                warmup3.text = "1x3 " + WeightRounder((WorkingWeight * 0.7).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.7).toFloat())).trim() + ")"
+                warmup4.text = "1x1 " + WeightRounder((WorkingWeight * 0.9).toFloat()).toInt().toString() + " ("+ PlatesPerSide(WeightRounder((WorkingWeight * 0.9).toFloat())).trim() + ")"
                 warmup5.text = "3x5 " + WeightRounder(WorkingWeight).toInt().toString() + " ("+ PlatesPerSide(WeightRounder(WorkingWeight)).trim() + ")"
 
                 true
